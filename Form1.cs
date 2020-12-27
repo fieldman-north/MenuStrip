@@ -29,7 +29,7 @@ namespace MenuStrip
                     BtnStat = true;
 
                     System.IO.Ports.SerialPort serialPort1;
-                    //System.ComponentModel.IContainer components = new System.ComponentModel.Container(); // <-- ЭТО ЧТО ЗА СТРАШНЫЙ ЗВЕРЬ??? и на хрено оно нужно?;
+                    System.ComponentModel.IContainer components = new System.ComponentModel.Container(); // <-- ЭТО ЧТО ЗА СТРАШНЫЙ ЗВЕРЬ??? и на хрено оно нужно?;
                     serialPort1 = new System.IO.Ports.SerialPort(components);
                     serialPort1.PortName = comboBox1.Text;
                     serialPort1.BaudRate = Convert.ToInt32(comboBox2.Text);
